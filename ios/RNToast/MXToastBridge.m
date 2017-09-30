@@ -22,11 +22,10 @@
 
 RCT_EXPORT_MODULE(MXToastBridge)
 
-RCT_EXPORT_METHOD(showToast:(NSDictionary*)params){
+RCT_EXPORT_METHOD(show:(NSString*)message params:(NSDictionary*)params){
   dispatch_async(dispatch_get_main_queue(), ^{
     __unsafe_unretained MXToastBridge *weakSelf = self;
     
-    NSString* message = params[@"msg"];
     NSString* type = params[@"type"];
     CGFloat padding = [params[@"padding"] floatValue];
     CGFloat duration = [params[@"duration"] floatValue];
