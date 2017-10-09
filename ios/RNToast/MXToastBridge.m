@@ -26,7 +26,14 @@ RCT_EXPORT_METHOD(show:(NSString*)message params:(NSDictionary*)params){
   dispatch_async(dispatch_get_main_queue(), ^{
     __unsafe_unretained MXToastBridge *weakSelf = self;
     
-    NSString* type = params[@"type"];
+//       private final String TOP = "TOP";
+//      private final String BOTTOM = "BOTTOM";
+//      private final String CENTER = "CENTER";
+//
+//      private final String SHORT = "SHORT";
+//      private final String LONG = "LONG";
+      
+    NSString* type = params[@"gravity"];
     CGFloat padding = [params[@"padding"] floatValue];
     CGFloat duration = [params[@"duration"] floatValue];
     //没有消息内容默认不展示
