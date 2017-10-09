@@ -36,34 +36,34 @@ export default class toastDemo extends Component {
     showToast = (type) => () => {
         switch (type) {
             case 0:
-                MXToast.show("默认样式", null);
+                MXToast.show("默认样式");
                 break;
             case 1:
-                MXToast.show("顶部 10s", {duration: 10000, gravity: MXToast.TOP});
+                MXToast.show("顶部 10s", 10000, MXToast.TOP);
                 break;
             case 2:
-                MXToast.show("顶部 长时间", {duration: MXToast.LONG, gravity: MXToast.TOP});
+                MXToast.show("顶部 长时间", MXToast.LONG, MXToast.TOP);
                 break;
             case 3:
-                MXToast.show("顶部 短时间", {duration: MXToast.SHORT, gravity: MXToast.TOP});
+                MXToast.show("顶部 短时间", MXToast.SHORT, MXToast.TOP);
                 break;
             case 4:
-                MXToast.show("中间 10s", {duration: 10000, gravity: MXToast.CENTER});
+                MXToast.show("中间 10s", 10000, MXToast.CENTER);
                 break;
             case 5:
-                MXToast.show("中间 长时间", {duration: MXToast.LONG, gravity: MXToast.CENTER});
+                MXToast.show("中间 长时间", MXToast.LONG, MXToast.CENTER);
                 break;
             case 6:
-                MXToast.show("中间 短时间", {duration: MXToast.SHORT, gravity: MXToast.CENTER});
+                MXToast.show("中间 短时间", MXToast.SHORT, MXToast.CENTER);
                 break;
             case 7:
-                MXToast.show("底部 10s", {duration: 10000, gravity: MXToast.BOTTOM});
+                MXToast.show("底部 10s", 10000, MXToast.BOTTOM);
                 break;
             case 8:
-                MXToast.show("底部 长时间", {duration: MXToast.LONG, gravity: MXToast.BOTTOM});
+                MXToast.show("底部 长时间", MXToast.LONG, MXToast.BOTTOM);
                 break;
             case 9:
-                MXToast.show("底部 短时间", {duration: MXToast.SHORT, gravity: MXToast.BOTTOM});
+                MXToast.show("底部 短时间", MXToast.SHORT, MXToast.BOTTOM);
                 break;
         }
     };
