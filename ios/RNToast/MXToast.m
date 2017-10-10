@@ -58,7 +58,7 @@
         
         contentView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, textLabel.frame.size.width+10, textLabel.frame.size.height+10)];
         contentView.layer.cornerRadius = 5.0f;
-        contentView.layer.borderWidth = 1.0f;
+        contentView.layer.masksToBounds = true;
         contentView.layer.borderColor = [[UIColor grayColor] colorWithAlphaComponent:0.5].CGColor;
         contentView.backgroundColor = [UIColor colorWithRed:0.2f
                                                       green:0.2f
