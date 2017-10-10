@@ -27,7 +27,7 @@ RCT_EXPORT_METHOD(show:(NSString*)message params:(NSDictionary*)params){
     __unsafe_unretained MXToastBridge *weakSelf = self;
       
     NSString* type = params[@"gravity"];
-    CGFloat padding = [params[@"margin"] floatValue];
+    CGFloat padding = [params[@"margin"] floatValue] ? [params[@"margin"] floatValue] : 30;
     CGFloat duration = [params[@"duration"] floatValue]/1000;
     //没有消息内容默认不展示
     if(!message){
